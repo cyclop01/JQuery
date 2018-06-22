@@ -1,0 +1,72 @@
+
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+<script src="js/bootbox.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contato Cliente</title> 
+    <!-- Olá, eu confesso que pensei em colocar isso em um alert, MASSSSSS -->
+    <!-- com certeza absoluta você iria ler meu codigo fonte. O fato é que -->
+    <!-- eu gostaria muito de poder mostrar meu pontencial na area de desenvolvimento de sistemas --> 
+    <!-- sou uma pessoa simples e facil de lidar, assim como um bom atributo para um software de sucesso. -->
+    <!-- Espero que assim como o mais NOVO projeto (Sistema para padarias/restaurantes/bares) --> 
+    <!-- eu possa ser o mais NOVO integrante do time de desenvolvimento. -->  
+    <!-- Além de aprender muito, gostaria de deixar minha marca com linhas e mais linhas de código úteis para a célula... --> 
+</head>
+    <body>
+        <div class="container ">
+            <div class="row">
+            <div class="container" style="max-width: 500px">
+                <div class="form_main">
+                    <h4 class="heading"><strong>Contato </strong> Cliente <span></span></h4>
+                        <div>
+                            <br />
+                                <input type="file" id="files" name="files[]" multiple class="Enviar"/>
+                                <output id="list"></output> 
+                            <br />
+                        </div>
+                        <div class="form">
+                        <form method="post" id="Form" name="Form">
+                            <TABLE width="500">
+                                
+                                <tr>
+                                    <input type="text" required="" placeholder="Nome" id="txtNome" name="txtNome" class="txt" onfocus="this.value=''";> 
+                                </tr>    
+                                
+                                <tr>                           
+                                    <label class="containerRD">Pessoa Fisica
+                                        <input type="radio" id="rbTipoPessoaPF" name="rbTipoPessoa" onclick="verificaDocumento()">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label class="containerRD">Pessoa Juridica
+                                        <input type="radio" id="rbTipoPessoaPJ" name="rbTipoPessoa" onclick="verificaDocumento()">
+                                        <span class="checkmark"></span>
+                                    </label>             
+                                </tr>   
+                                
+                                <tr>                                    
+                                    <input type="text" required value="" name="txtCPF_CNPJ" id="txtCPF_CNPJ" placeholder="Documento" class="txt" onfocus="this.value=''";>                                    
+                                </tr> 
+                                
+                                <tr>                                                                        
+                                    <input type="text" required placeholder="Telefone ou Celular" value="" name="txtTelefone" id="txtTelefone" class="txt" onkeypress="formataFone()" onfocus="this.value='';">
+                                </tr> 
+
+                            </TABLE>
+                            <center>
+                                <input type="submit" value="Enviar" name="btnEnviar" id="btnEnviar" class="Enviar" onclick="enviar()">
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </body>    
+</html>
+
